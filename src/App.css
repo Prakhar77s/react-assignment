@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+.main {
+  margin: 3%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading {
+  margin: 0;
+font-family: 'Ginto Normal',sans-serif;
+font-weight: bold;
+font-size: 2.6rem;
+line-height: 1.2;
+letter-spacing: -0.01em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.details {
+  margin-top:3%;
+ display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.paragraph{
+  margin-right: 10%;
+}
+
+.profilepic{
+  height: 30px;
+  margin-left: -3px;
+}
+
+.author-name{
+  color: #4d03d6;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+.buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 5%;
+}
+.save{
+  color: #4c04d2;
+  margin-top: 1%;
+  margin-left: 7%;
+  text-decoration: none;
+  font-weight: bold;
+}
+.share{
+  color: #4c04d2;
+  margin-top: 1%;
+  margin-left: 7%;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.schedule{
+  background-color: #4c04d2;
   color: white;
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.App-link {
-  color: #61dafb;
+.images {
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img1{
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 600px;
+  height: 320px;
 }
