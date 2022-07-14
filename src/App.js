@@ -11,8 +11,16 @@ function App() {
             {/* heading section */}
             <div className="heading-section">
               <h1 className="heading">{record.title}</h1>
-              <span style={{ color: "gray" }}>
-                Multi-Day Course{" "}
+              <span
+                style={{
+                  color: "gray",
+                  fontSize: "1.2rem",
+                  fontWeight: "bold",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <span style={{ paddingRight: 7 }}> Multi-Day Course</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -32,8 +40,17 @@ function App() {
               <div classname="child details-text">
                 <p className="paragraph">{record.content}</p>
                 <div className="author-info">
-                  <div className="author-name">{record.teacher}</div>
-                  <div style={{ marginBottom: 7, marginTop: 10 }}>
+                  <div className="author-name">
+                    <img
+                      className="profilepic"
+                      src={record.profilepic}
+                      alt="content"
+                    />
+                    <span>{record.teacher}</span>
+                  </div>
+                  <div
+                    style={{ marginBottom: 7, marginTop: 10, color: "grey" }}
+                  >
                     <span>&#11088;</span>
                     <span>&#11088;</span>
                     <span>&#11088;</span>
@@ -41,7 +58,7 @@ function App() {
                     <span style={{ marginRight: 10 }}>&#11088;</span>
                     {record["teacher-reviews"]}total reviews for this teacher
                   </div>
-                  <div>
+                  <div style={{ color: "gray" }}>
                     <span>&#11088;</span>
                     <span>&#11088;</span>
                     <span>&#11088;</span>
@@ -49,7 +66,13 @@ function App() {
                     <span style={{ marginRight: 10 }}>&#11088;</span>
                     {record["class-reviews"]} reviews for this class
                   </div>
-                  <div style={{ marginTop: "1rem", fontSize: "large" }}>
+                  <div
+                    style={{
+                      marginTop: "1rem",
+                      fontSize: "large",
+                      fontWeight: 500,
+                    }}
+                  >
                     Completed by {record["completed-by"]} learners
                   </div>
                   {/* buttons */}
